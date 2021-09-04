@@ -1,0 +1,45 @@
+.para
+{
+    color: black;
+   
+}
+.center
+{
+    text-align: center;
+    display:block;
+    
+}
+table{
+    border-color: grey;
+    border-width:2px;
+    text-align:center;
+    
+}
+.par
+{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+h3 {
+    display: inline;
+    font-size: 1.1em;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0.1em;
+    margin-inline-end: 0.1em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.table-width
+{
+    border:grey 0px solid;
+   
+}
+body
+{
+    display :inline-block;
+}
+.code
+{
+    font-size: 18px; color: brown;
+}
