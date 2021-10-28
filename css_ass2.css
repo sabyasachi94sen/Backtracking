@@ -23,7 +23,7 @@
     padding-bottom:0; 
     background-color:black;
     border: 5px solid red; 
-    border-radius:20px;
+    border-radius:25px;
 }
 .blackbox3
 {
@@ -142,6 +142,11 @@ body{
     border-style:solid;
 }
 .textbox-border4
+{
+    border-width:0px 2px 0px 0px;
+    border-style:solid;
+}
+.textbox-border5
 {
     border-width:2px 0px 0px 2px;
     border-style:solid;
