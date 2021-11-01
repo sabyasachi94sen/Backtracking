@@ -1,0 +1,28 @@
+.cards
+{
+    border: 1px solid orangered;
+     height: 350px; 
+     box-shadow:6px 6px 6px lightgray;
+     border-radius:3px;
+}
+
+hr
+{
+    border-width: 2px; 
+    margin-left: 20px;
+    height:3px;
+    background-color: lightgray
+}
+
+.font_awesome_prop
+{
+    cursor: pointer; 
+    font-size: 25px; 
+    color:orangered
+}
+.card_container
+{
+    display: flex; 
+    justify-content: space-between; 
+    margin-right: 200px;
+}
