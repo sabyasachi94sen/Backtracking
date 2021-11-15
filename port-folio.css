@@ -9,6 +9,7 @@
     width:100%;
     height:10vh;
     
+    
     position: sticky;
     top:0;
 
@@ -18,7 +19,7 @@
     width:35%;
     height:10vh;
     background-color: #f4e2c6;
-    color:rgb(65,74,76);
+    color:rgb(138, 138, 138);
     position: absolute;
     right:150px;
     display: flex;
@@ -26,7 +27,20 @@
     align-items: center;
     font-size: 18px;
     font-family: sans-serif;
+ 
+  
+  
+   
     
+}
+.cancel
+{
+    font-size:50px;
+    height:20px;
+    position: absolute;
+    right:0;
+    display: none;
+
 }
 .navbar a:hover
 {
@@ -37,18 +51,20 @@
 .navbar a{
     text-decoration: none;
     color:rgb(65,74,76);
+   
+   
 }
 .name
 {
     color:#105652;
-    font-size:30px;
+    font-size:2rem;
     font-weight: bolder;
     position: absolute;
-    left:200px;
+    left:8rem;
     width:30%;
     height:10vh;
  
-    text-align: center;
+
     align-items: center;
     display: flex;
     font-family: sans-serif;
@@ -56,18 +72,24 @@
 .intro
 {
     width:100%;
-    height:60vh;
+    height:54vh;
     background-color:#105652;
-    position: relative;
+     position: relative;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    
+   
+        
+ 
 }
 .wave
 {
     position: absolute;
-    width:100%;
-    bottom:0px;
-
+    bottom:0;
 }
+
 .dev
 {
     
@@ -75,9 +97,12 @@
     height:48vh;
     left:60px;
     top:30px;
-    
-    z-index: 2;
     position: relative;
+    z-index: 2;
+    
+ 
+    
+   
    
     
 }
@@ -89,6 +114,7 @@
     margin-top: 20px;
     position: absolute;
     font-family: sans-serif;
+    
 }
 .text1
 {
@@ -111,14 +137,17 @@
     position: absolute;
     color:white;
     font-family: sans-serif;
+    
 }
 .btn{
     display:flex;
-    width:50%;
+    width:60%;
     height:10vh;
   justify-content: space-between;
     position: absolute;
     bottom:0;
+
+    
   
 }
 .btn1
@@ -140,6 +169,7 @@
     height:40px;
     color:white;
     font-size:15px;
+   
 }
 
 .btn1:hover
@@ -157,17 +187,25 @@
 {
     width:400px;
     height:48vh;
+    position: relative;
+    
+    top:31px;
+   
+   
+    
+    
 }
 .pr{
    
     z-index: 4;
-    transform: translate(320px,42px);
+   
+    
 }
 
 .about-us
 {
-    width:80%;
-    height:65vh;
+    width:90%;
+    height:63.3vh;
     
     margin: auto;
     position: relative;
@@ -185,20 +223,28 @@
 }
 
 .about-us-person{
-    width:400px;
-    height:48vh;
+    width:50%;
+    height:53vh;
     position: relative;
     bottom:-78px;
+  
  
     
 
 
 }
+.about-us-pr
+{
+    width:75%;
+    height:53vh;
+}
 .about-us-text
 {
-    width:600px;
+    width:80vw;
     height:60vh;
     margin-right:120px;
+    
+    position: relative;
    
    
    
@@ -231,7 +277,7 @@ h3{
 }
 .about-us-skills
 {
-    width:700px;
+    width:100%;
     height:120px;
     
     margin-top: 20px;
@@ -277,10 +323,23 @@ h3{
     width:60px;
     height:60px;
 }
+.java
+{
+    width:60px;
+    height:60px;
+}
+
+.bootstrap
+{
+    width:60px;
+    height:60px;
+}
+
 .port-folio-h3
 {
     color:#105652;
-    margin-top:70px;
+    position: relative;
+    top:30px;
 
    
 
@@ -291,13 +350,14 @@ h3{
     height:5px;
     background-color: orange;
     border-width: 0px;
-    margin-top:10px;
+    margin-top:30px;
  
 }
 .port-folio-projects
 {
    width:90%;
     height:90vh;
+
 
     margin:auto;
     display: flex;
@@ -325,10 +385,14 @@ h3{
    
     margin:auto;
     position: relative;
-    top:30px;
+    top:40px;
     display: flex;
     justify-content: space-between;
     
+}
+.resume-h3
+{
+    margin-top:30px;
 }
 .resume-hr
 {
@@ -338,7 +402,7 @@ h3{
 .work
 {
     display:flex;
-    margin-top: 20px;
+    margin-top: 30px;
     justify-content: space-between;
 }
 .work-container
@@ -417,7 +481,8 @@ h3{
 .resume-image-container
 {
     width:380px;
-    height:65vh;
+    height:70vh;
+   
     
 }
 
@@ -478,6 +543,11 @@ body{
     width:400px;
     height:2px;
     background-color: orange;
+}
+
+.people-say-h3
+{
+    margin-top:90px;
 }
 .people-say{
     width:70%;
@@ -735,6 +805,12 @@ textarea{
      color:grey;
      font-family: sans-serif;
  }
+
+ textarea
+ {
+     width:100%;
+     position: relative;
+ }
  .footer{
      background-color: beige;
      width:100%;
@@ -742,11 +818,459 @@ textarea{
      position: relative;
      bottom:0;
      top:100px;
- }
- .footer {
      color:grey;
      display: flex;
      justify-content: center;
      align-items: center;
      font-size:17px;
  }
+
+ 
+ .toggle-btn
+ {
+     width:30px;
+     height:21px;
+     
+  
+     position: absolute;
+     right:2px;
+     top:1.5rem;
+     flex-direction: column;
+    
+     justify-content: space-between;
+     margin: auto;
+ }
+
+ @media (max-width:800px)
+ {
+     
+    .banner{
+        position: relative;
+    }
+    
+     .navbar{
+ 
+        font-size: 1rem;
+        line-height: 60px;
+        color:yellow;
+       
+        text-align: center;
+        border: 15px;
+        height:45vh;
+        
+        z-index: 3;
+        
+        position: absolute;
+        right: 0;
+        width:100%;
+        display:none;
+        
+       
+   
+}
+div .active
+{
+   
+    display: block;
+}
+div .close
+{
+    display: none;
+}
+ 
+  
+   .toggle-btn
+   {
+       display: flex;
+       
+       top:20px;
+   }
+
+
+   .toggle-btn .bar{
+    width:100%;
+    height:3px;
+    background-color: black;
+    color:black;
+    border-radius: 15px;
+   
+}
+
+.navbar span{
+    display: block;
+    }
+
+    .name
+    {
+        font-size: 1.2rem;
+        position: absolute;
+        left:1rem;
+      
+        width:40%;
+    }
+    
+    .text1{
+        font-size: 1rem;
+        display: block;
+    }
+    .text2{
+        font-size: 1rem;
+        display: block;
+    }
+    .intro-para{
+        font-size: 1rem;
+        display: block;
+    }
+    .btn{
+        width:50%;
+        
+      
+        position: absolute;
+
+    }
+    
+    .btn1
+    {
+        width:8rem;
+        height:2rem;
+    }
+    .btn2
+    {
+        width:8rem;
+        height:2rem;
+        position: absolute;
+        left:9rem;
+    }
+  
+   
+   .intro
+   {
+       display: flex;
+       flex-direction: column;
+       height:110vh;
+       position: relative;
+      
+     
+ 
+    
+       
+   }
+   .dev{
+     
+       width:100%;
+       height:50vh;
+       position:relative;
+       left:0;
+       top:0;
+     
+   }
+   .person{
+      
+        position: relative;
+         left:4rem;
+        width:75%;
+         height: 50vh;
+         bottom: 0px;
+         top:0;
+        
+        
+        
+        
+    
+      
+   }
+   .pr
+   {
+    width:100%;
+    height: 50vh;
+    position: relative;
+   }
+
+   .about-us{
+       width:98%;
+       height:140vh;
+       display: flex;
+       position: relative;
+       flex-direction: column;
+     
+       
+   }
+   .about-us-person{
+       width:80%;
+       height:50vh;
+      
+       left:4rem;
+       position: relative;
+       top:0;
+       
+       
+   }
+   .about-us-pr{
+    width:80%;
+    height:50vh;
+   }
+   .about-us-text
+   {
+     
+       width:95%;
+       height:100vh;
+   
+       position: relative;
+       top:-10px;
+       box-sizing: border-box;
+      
+   }
+   .about-us-text h3{
+       text-align: center;
+       font-size:2rem;
+   }
+   .about-us-text-hr{
+    margin:auto;
+}
+   .about-us-skill-para
+   {
+       font-size: 1rem;
+   }
+   .about-us-para{
+       font-size: 1rem;
+   }
+   .about-us-skills
+   {
+       width:100%;
+       
+       height:15vh;
+       position: relative;
+       bottom: 0;
+       top:10px;
+
+       
+   }
+   .about-us-skill-hr
+   {
+    width:13rem;
+    height:0.2px;
+    background-color: grey;
+    position: relative;
+    
+   }
+   .container{
+      
+       width:100%;
+   }
+   .skills
+   {
+       width:100%;
+     
+       flex-wrap: wrap;
+       justify-content: space-around;
+       position: relative;
+       height:12vh;
+      
+     
+   }
+     .icons
+     {
+       width:2rem;
+       height:2rem;
+     }
+
+     .port-folio-h3{
+        margin-top:120px;
+    }
+    .port-folio-projects{
+        height:210vh;
+    }
+    
+    .resume
+    {
+        display: flex;
+        flex-direction: column;
+      
+        width:100%;
+        height:200vh;
+        position: relative;
+        justify-content: space-around;
+        
+    }
+    .resume-h3
+    {
+        margin-top:170px;
+    }
+    .resume-image-container{
+        width:110%;
+        position: relative;
+        top:200px;
+        height:80vh;
+        
+    }
+    .resume-image
+    {
+        height:60vh;
+        margin: auto;
+        width:65%;
+    }
+
+    .resume-person
+    {
+        height:60vh;
+    }
+    .resume-icon{
+        margin:auto;
+        position: relative;
+        margin-top:40px;
+    }
+    .experience{
+        width:100%;
+        position: relative;
+    }
+
+    
+    .work{
+        width:80%;
+      
+        position: relative;
+    }
+    .people-say{
+        width:190%;
+       
+        height:80vh;
+        position: relative;
+    }
+    .people-say-h3
+    {
+        margin-top:200px;
+    }
+    .elizabeth-container{
+        width:25%;
+        
+       
+        
+      
+    }
+    .elizabeth-image{
+        width:80px;
+        height:80px;
+       
+    }
+    .people-say-image-container
+    {
+        
+        
+        display: flex;
+        
+        width:100%;
+    }
+    .lorem-container{
+        width:100%;
+    }
+    .lorem-text-container
+    {
+        font-size:0.9rem;
+    }
+    .testimonial-outer-container{
+        position: absolute;
+        bottom:5px;
+    }
+    .testimonial-internal-container{
+       
+        width:45vh;
+        height:10vh;
+    }
+    .contact-me
+    {
+        width:100%;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+    }
+    .lets-connect-outer-container{
+        width:100%;
+    }
+    .send-me-outer-container{
+        width:100%;
+        height: 100vh;
+        background-color: beige;
+    }
+    .send-me-connect-h3{
+        margin-top: 80px;
+    }
+    .send-me-inner-container{
+        height:100vh;
+    }
+    .footer{
+     display: none;
+       
+    }
+   
+    
+ }
+
+ @media (max-width:400px)
+ {
+    .about-us{
+        width:98%;
+        height:110vh;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+      
+        
+    }
+    .icons
+    {
+        width:2rem;
+        height:2rem;
+    }
+    .about-us
+    {
+        height:129vh;
+    }
+    .about-us-skills{
+        position: relative;
+        top:130px;
+        height:11vh;
+    }
+   
+ }
+
+ @media (max-width:321px)
+ {
+    .about-us-skills{
+        position: relative;
+        top:30px;
+    }
+   
+ }
+
+ @media (min-width:375px) and (max-width:376px)
+ {
+    .about-us-skills{
+        position: relative;
+        top:80px;
+        height:10vh;
+    }
+    .about-us{
+        height:110vh;
+    }
+    .about-us-text{
+        position: relative;
+        top:10px;
+    }
+
+    .port-folio-h3{
+        position: relative;
+        top:90px;
+    }
+
+    .port-folio-hr{
+        position: relative;
+        top:70px;
+    }
+    .port-folio-projects{
+        position: relative;
+        top:100px;
+    }
+ }
+
+ 
